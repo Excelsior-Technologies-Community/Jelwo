@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md">
+    <!-- <nav class="navbar navbar-expand-md">
       <div class="container-xl">
         <a class="navbar-brand" href="#">
           <img
@@ -43,54 +43,243 @@
         <i class="fa-regular fa-heart">(0)</i>
         <i class="fa-solid fa-cart-plus">(0)</i>
       </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand mb-0" href="#">
+            <img
+              src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=352"
+              alt=""
+            />
+          </a>
+          <p class="navbar-text mb-0 ms-3">
+            | Free UK standard delivery on all orders.
+          </p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header bg-light">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Home
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>06 Classic Jwellary</p>
+                    <p>05 Unique Jwellary</p>
+                    <p>04 Morden Jwellary</p>
+                    <p>03 Traditional Jwellary</p>
+                    <p>02 Luxury Jwellary</p>
+                    <p>01 Elegant Jwellary</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Shop
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>Earrings</p>
+                    <p>Necklace</p>
+                    <p>Rings</p>
+                    <p>Bracelets</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Products
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>Earrings</p>
+                    <p>Necklace</p>
+                    <p>Rings</p>
+                    <p>Bracelets</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Pages
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>About</p>
+                    <p>Contact</p>
+                    <p>Privacy & Policies</p>
+                    <p>Terms & Conditions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- === -->
+        <div class="collapse navbar-collapse">
+          <form class="search-form ms-md-1" role="search">
+            <input type="text" placeholder="Search here..." />
+            <i class="fa fa-search"></i>
+          </form>
+          <div class="icons_nav">
+            <i class="fa-solid fa-user-plus"></i>
+            <i class="fa-regular fa-heart">(0)</i>
+            <i class="fa-solid fa-cart-plus">(0)</i>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- Second Navbar (Menu Section) -->
     <nav class="navbar navbar-expand-lg menu-navbar">
       <div class="container-xl">
-        <div class="left">(220) 123 456 7890</div>
+        <div class="left">
+          <i class="fa-solid fa-phone"></i>(220) 123 456 7890
+        </div>
         <div class="collapse navbar-collapse justify-content-center">
           <ul class="navbar-nav">
-            <!-- HOME Mega Menu -->
+            <!-- HOME sub Menu -->
             <li class="nav-item dropdown mega-dropdown">
               <a class="nav-link dropdown-toggle" href="#">HOME</a>
 
               <div class="dropdown-menu mega-menu p-4">
                 <div class="row">
                   <div class="col-lg-2 col-md-4 text-center">
-                    <img src=".." class="img-fluid" />
-                    <p class="mt-2">........</p>
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/home6.jpg?v=1750230396&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">06 Classic jewelry</p>
                   </div>
 
                   <div class="col-lg-2 col-md-4 text-center">
-                    <img src=".." class="img-fluid" />
-                    <p class="mt-2">........</p>
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/demo-menu-banner-1.jpg?v=1746178520&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">01 Unique jewelry</p>
                   </div>
 
                   <div class="col-lg-2 col-md-4 text-center">
-                    <img src=".." class="img-fluid" />
-                    <p class="mt-2">........</p>
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/demo-menu-banner-2.jpg?v=1746178520&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">02 Modern jewelry</p>
                   </div>
 
                   <div class="col-lg-2 col-md-4 text-center">
-                    <img src=".." class="img-fluid" />
-                    <p class="mt-2">........</p>
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/demo-menu-banner-3.jpg?v=1746178520&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">03 Traditional jewelry</p>
                   </div>
 
                   <div class="col-lg-2 col-md-4 text-center">
-                    <img src=".." class="img-fluid" />
-                    <p class="mt-2">........</p>
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/demo-menu-banner-4.jpg?v=1746178520&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">04 Luxury jewelry</p>
                   </div>
 
                   <div class="col-lg-2 col-md-4 text-center">
-                    <img src=".." class="img-fluid" />
-                    <p class="mt-2">........</p>
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/demo-menu-banner-5.jpg?v=1746178520&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">05 Elegant jewelry</p>
                   </div>
                 </div>
               </div>
             </li>
 
-            <!-- SHOP Mega Menu -->
+            <!-- SHOP sub Menu -->
             <li class="nav-item dropdown mega-dropdown position-static">
               <a class="nav-link dropdown-toggle" href="#">SHOP</a>
 
@@ -159,7 +348,7 @@
               </div>
             </li>
 
-            <!-- PRODUCTS Mega Menu -->
+            <!-- PRODUCTS sub Menu -->
             <li class="nav-item dropdown mega-dropdown position-static">
               <a class="nav-link dropdown-toggle" href="#">PRODUCTS</a>
 
@@ -224,7 +413,7 @@
                     </div>
 
                     <!-- RIGHT SIDE POPULAR COLLECTION -->
-                    <!-- <div class="col-lg-4">
+                    <div class="col-lg-4">
                       <div
                         class="d-flex justify-content-between align-items-center mb-3"
                       >
@@ -239,37 +428,57 @@
                       <div class="swiper productSwiper">
                         <div class="swiper-wrapper">
                           <!-- Slide 1 -->
-                    <!-- <div class="swiper-slide">
+                          <div class="swiper-slide">
                             <div class="product-card text-center">
-                              <img src="ring1.jpg" class="img-fluid mb-3" />
-                              <p class="fw-semibold">From Rs. 12.00</p>
+                              <img
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-36.jpg?v=1741666478&width=300"
+                                class="img-fluid mb-3"
+                              />
+                              <p class="fw-semibold">From Rs.22</p>
                             </div>
-                          </div> -->
+                          </div>
 
-                    <!-- Slide 2 -->
-                    <!-- <div class="swiper-slide">
+                          <!-- Slide 2 -->
+                          <div class="swiper-slide">
                             <div class="product-card text-center">
-                              <img src="ring2.jpg" class="img-fluid mb-3" />
-                              <p class="fw-semibold">Rs. 12.00</p>
+                              <img
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-21.jpg?v=1741607520&width=300"
+                                class="img-fluid mb-3"
+                              />
+                              <p class="fw-semibold">Rs.15 <s>Rs. 30</s></p>
                             </div>
-                          </div> -->
+                          </div>
 
-                    <!-- Slide 3 -->
-                    <!-- <div class="swiper-slide">
+                          <!-- Slide 3 -->
+                          <div class="swiper-slide">
                             <div class="product-card text-center">
-                              <img src="ring3.jpg" class="img-fluid mb-3" />
-                              <p class="fw-semibold">Rs. 15.00</p>
+                              <img
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-56.jpg?v=1741670785&width=300"
+                                class="img-fluid mb-3"
+                              />
+                              <p class="fw-semibold">Rs. 00</p>
+                            </div>
+                          </div>
+
+                          <!-- Slide 4 -->
+                          <div class="swiper-slide">
+                            <div class="product-card text-center">
+                              <img
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-11.jpg?v=1741605562&width=300"
+                                class="img-fluid mb-3"
+                              />
+                              <p class="fw-semibold">Rs. 00</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
             </li>
 
-            <!-- BLOG (NO DROPDOWN) -->
+            <!-- BLOG -->
             <li class="nav-item">
               <a class="nav-link" href="#">BLOG</a>
             </li>
@@ -309,7 +518,9 @@
             </li>
           </ul>
         </div>
-        <div class="right">Free try at home</div>
+        <div class="right">
+          <i class="fa-solid fa-house-circle-check"></i>Free try at home
+        </div>
       </div>
     </nav>
 
@@ -388,6 +599,105 @@
       <div class="swiper-pagination"></div>
     </div>
 
+    <!-- Discount section -->
+    <section class="discount">
+      <div class="container_dis">
+        <div class="dis">
+          <img
+            src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-banner-1.jpg?v=1742541671&width=832"
+            alt="Snow"
+            style="width: 100%"
+          />
+          <div class="text1">
+            <p>Get a 30% discount</p>
+            <h1>Exquisite</h1>
+            <h1>collection</h1>
+            <a href="#" class="btn hero-btn">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="dis">
+          <img
+            src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-banner-2.jpg?v=1742541712&width=832"
+            alt="Snow"
+            style="width: 100%"
+          />
+          <div class="text2">
+            <p>Get a 30% discount</p>
+            <h1>Exquisite</h1>
+            <h1>collection</h1>
+            <a href="#" class="btn hero-btn">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular category section -->
+    <section class="category">
+      <h1 style="text-align: center; margin-bottom: 40px">Popular category</h1>
+      <div class="swiper-container swiper-initialize">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide item">
+            <img
+              src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-cate-1.jpg?v=1742619384&width=860"
+              alt=""
+            />
+            <div class="i_dis">
+              <p>10+ ITEMS</p>
+              <h1>Rings</h1>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-cate-2.jpg?v=1742619383&width=860"
+              alt=""
+            />
+            <div class="i_dis">
+              <p>10+ ITEMS</p>
+              <h1>Earrings</h1>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-cate-5.jpg?v=1742621906&width=860"
+              alt=""
+            />
+            <div class="i_dis">
+              <p>10+ ITEMS</p>
+              <h1>Pendants</h1>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-cate-4.jpg?v=1742620620&width=860"
+              alt=""
+            />
+            <div class="i_dis">
+              <p>10+ ITEMS</p>
+              <h1>Necklace</h1>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-cate-3.jpg?v=1742619384&width=860"
+              alt=""
+            />
+
+            <div class="i_dis">
+              <p>10+ ITEMS</p>
+              <h1>Bracelets</h1>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================JS Section=================================== -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -425,6 +735,25 @@
         navigation: {
           nextEl: ".product-next",
           prevEl: ".product-prev",
+        },
+      });
+
+      //for popular category
+      const Category = new Swiper(".swiper-initialize", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        grabCursor: true, // for drag with mouse
+
+        breakpoints: {
+          1920: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          320: {
+            slidesPerView: 2,
+          },
         },
       });
     </script>

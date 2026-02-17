@@ -1,3 +1,10 @@
+html,
+body {
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none !important;
+}
 .navbar {
   /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
   border-bottom: 1px solid black;
@@ -40,12 +47,16 @@
   cursor: pointer;
 }
 
+.icons_nav {
+  margin-left: 450px;
+}
+
 .fa-user-plus,
 .fa-heart,
 .fa-cart-plus {
   color: #777;
   font-size: 1.2em;
-  margin-left: 0px;
+  margin-left: 40px;
   cursor: pointer;
 }
 
@@ -111,66 +122,21 @@
   transition: 0.3s ease;
 }
 
-.mega-menu ul li a:hover {
-  color: #a77f66;
+.mega-menu a :hover {
+  color: #db8149;
 }
 
-/* Vertical divider */
 .mega-menu .border-end {
   border-right: 1px solid #eee !important;
 }
-
-/* ============================= */
-/*     PRODUCT SWIPER COMMON     */
-/* ============================= */
-
-.productSwiper {
-  width: 100%;
-}
-
-.product-card img {
-  border: 1px solid #eee;
-  padding: 15px;
-  transition: 0.3s ease;
-}
-
-.product-card img:hover {
-  transform: scale(1.05);
-}
-
-.product-card p {
-  font-size: 14px;
-  color: #777;
-}
-
-.product-prev,
-.product-next {
-  display: flex;
-  position: static;
-  width: 30px;
-  height: 30px;
-  color: #333;
-}
-
-.product-prev::after,
-.product-next::after {
-  font-size: 10px;
-}
-
-.product-prev:hover,
-.product-next:hover {
+.right i,
+.left i {
   color: #a77f66;
 }
 
-.img-fluid {
-  max-width: 50%;
-  height: auto;
-}
-.nav-item.dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-/* =====carousel images responsive====== */
+/* =============================
+        Hero SECTION       
+============================= */
 .heroSwiper {
   width: 100%;
   height: 650px;
@@ -212,7 +178,7 @@
   justify-content: center;
   text-align: center;
   color: black;
-  font-family: "Marcellus", sans-serif;
+  /* font-family: "Marcellus", sans-serif; */
 }
 
 .hero-logo {
@@ -267,4 +233,124 @@
   color: #777 !important;
   cursor: not-allowed;
   opacity: 1 !important;
+}
+
+/* =============================
+        DISCOUNT SECTION       
+============================= */
+.discount {
+  margin-top: 100px;
+}
+
+.container_dis {
+  gap: 50px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: black;
+  margin-left: 80px;
+}
+
+.text1 {
+  position: absolute;
+  top: 44%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+}
+.text2 {
+  position: absolute;
+  top: 44%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+/* ============================= */
+/*    POPULAR CATEGORY    */
+/* ============================= */
+.category {
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.category img {
+  width: 400px;
+  height: 450px;
+}
+
+.category img:hover {
+  filter: opacity(0.7);
+  transform: scale(1);
+}
+
+.category .i_dis {
+  background-color: white;
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  width: 60%;
+  height: 30%;
+}
+.i_dis p {
+  color: #777;
+  /* padding-top: 15px !important; */
+}
+
+.category .i_dis a {
+  padding: 10px 20px;
+  color: #777;
+  border-radius: 4px;
+}
+
+/* ============================= */
+/*     PRODUCT SWIPER COMMON     */
+/* ============================= */
+
+.productSwiper {
+  width: 100%;
+}
+
+.product-card img {
+  border: 1px solid #eee;
+  padding: 15px;
+  transition: 0.3s ease;
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+.product-prev,
+.product-next {
+  display: flex;
+  position: static;
+  width: 30px;
+  height: 30px;
+  color: #333;
+}
+
+.product-prev::after,
+.product-next::after {
+  font-size: 10px;
+}
+
+.product-prev:hover,
+.product-next:hover {
+  color: #a77f66;
+}
+
+.img-fluid {
+  max-width: 50%;
+  height: auto;
+}
+.nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
 }
