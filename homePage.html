@@ -47,45 +47,35 @@
 
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <div class="d-flex align-items-center">
-          <a class="navbar-brand mb-0" href="#">
-            <img
-              src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=352"
-              alt=""
-            />
-          </a>
-          <p class="navbar-text mb-0 ms-3">
-            | Free UK standard delivery on all orders.
-          </p>
-        </div>
+        <!-- TOGGLER -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler d-lg-none"
           type="button"
           data-bs-toggle="offcanvas"
-          href="#offcanvasExample"
-          role="button"
+          data-bs-target="#offcanvasExample"
           aria-controls="offcanvasExample"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- OFFCANVAS -->
         <div
-          class="offcanvas offcanvas-start"
+          class="offcanvas offcanvas-start d-lg-none"
           tabindex="-1"
           id="offcanvasExample"
-          aria-labelledby="offcanvasExampleLabel"
         >
           <div class="offcanvas-header bg-light">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <h5 class="offcanvas-title">Menu</h5>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="offcanvas"
-              aria-label="Close"
             ></button>
           </div>
+
           <div class="offcanvas-body">
             <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!-- HOME -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                   <button
@@ -93,8 +83,6 @@
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
                   >
                     Home
                   </button>
@@ -102,7 +90,6 @@
                 <div
                   id="flush-collapseOne"
                   class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingOne"
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
@@ -115,6 +102,8 @@
                   </div>
                 </div>
               </div>
+
+              <!-- SHOP -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwo">
                   <button
@@ -122,8 +111,6 @@
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseTwo"
                   >
                     Shop
                   </button>
@@ -131,7 +118,6 @@
                 <div
                   id="flush-collapseTwo"
                   class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingTwo"
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
@@ -142,6 +128,8 @@
                   </div>
                 </div>
               </div>
+
+              <!-- PRODUCTS -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
                   <button
@@ -149,8 +137,6 @@
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseThree"
                   >
                     Products
                   </button>
@@ -158,7 +144,6 @@
                 <div
                   id="flush-collapseThree"
                   class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree"
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
@@ -169,23 +154,22 @@
                   </div>
                 </div>
               </div>
+
+              <!-- PAGES (FIXED UNIQUE ID) -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
+                <h2 class="accordion-header" id="flush-headingFour">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseThree"
+                    data-bs-target="#flush-collapseFour"
                   >
                     Pages
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseThree"
+                  id="flush-collapseFour"
                   class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree"
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
@@ -199,28 +183,61 @@
             </div>
           </div>
         </div>
-        <!-- === -->
-        <div class="collapse navbar-collapse">
-          <form class="search-form ms-md-1" role="search">
-            <input type="text" placeholder="Search here..." />
-            <i class="fa fa-search"></i>
-          </form>
-          <div class="icons_nav">
-            <i class="fa-solid fa-user-plus"></i>
-            <i class="fa-regular fa-heart">(0)</i>
-            <i class="fa-solid fa-cart-plus">(0)</i>
+        <div class="container-fluid">
+          <div class="d-flex align-items-center justify-content-between w-150">
+            <!-- LEFT -->
+            <div class="d-flex align-items-center">
+              <a class="navbar-brand mb-0 ms-3" href="#">
+                <img
+                  src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=352"
+                />
+              </a>
+
+              <p class="navbar-text mb-0 ms-3 d-none d-md-block">
+                | Free UK standard delivery on all orders.
+              </p>
+            </div>
+
+            <!-- CENTER SEARCH (Desktop) -->
+            <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+              <form class="search-form w-50">
+                <input type="text" placeholder="Search here..." />
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="d-flex align-items-center">
+              <!-- Mobile Search Icon -->
+              <div class="d-lg-none me-4 d-none d-sm-inline">
+                <i class="fa fa-search fs-5"></i>
+              </div>
+
+              <div class="icons_nav d-flex align-items-center">
+                <!--  (hide - 576px) -->
+                <i class="fa-solid fa-user-plus me-4 d-none d-sm-inline"></i>
+
+                <!--(hide - 576px) -->
+                <i class="fa-regular fa-heart me-4 d-none d-sm-inline">(0)</i>
+
+                <!-- Cart (always visible) -->
+                <i class="fa-solid fa-cart-plus me-4">(0)</i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- Second Navbar (Menu Section) -->
-    <nav class="navbar navbar-expand-lg menu-navbar">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-xl">
         <div class="left">
           <i class="fa-solid fa-phone"></i>(220) 123 456 7890
         </div>
-        <div class="collapse navbar-collapse justify-content-center">
+        <div
+          class="collapse navbar-collapse d-none d-lg-flex justify-content-center"
+        >
           <ul class="navbar-nav">
             <!-- HOME sub Menu -->
             <li class="nav-item dropdown mega-dropdown">
@@ -599,6 +616,12 @@
       <div class="swiper-pagination"></div>
     </div>
 
+    <div class="stripText">
+      <p class="mt-3">Diamonds for every excuse 1500+ designs under</p>
+
+      <div class="timeText mt-2" id="timedText">200</div>
+    </div>
+
     <!-- Discount section -->
     <section class="discount">
       <div class="container_dis">
@@ -612,7 +635,7 @@
             <p>Get a 30% discount</p>
             <h1>Exquisite</h1>
             <h1>collection</h1>
-            <a href="#" class="btn hero-btn">SHOP NOW</a>
+            <a href="#" class="btn hero-btn">SHOP </a>
           </div>
         </div>
         <div class="dis">
@@ -625,7 +648,7 @@
             <p>Get a 30% discount</p>
             <h1>Exquisite</h1>
             <h1>collection</h1>
-            <a href="#" class="btn hero-btn">SHOP NOW</a>
+            <a href="#" class="btn hero-btn">SHOP </a>
           </div>
         </div>
       </div>
@@ -696,6 +719,31 @@
       </div>
     </section>
 
+    <section class="facility">
+      <div class="border-end">
+        <div class="listFacility">
+          <i class="fa-solid fa-truck"></i>
+          <p>Free Shipping</p>
+        </div>
+      </div>
+      <div class="border-end">
+        <div class="listFacility">
+          <i class="fa-solid fa-headset"></i>
+          <p>Quality Support</p>
+        </div>
+      </div>
+      <div class="border-end">
+        <div class="listFacility">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <p>Money return</p>
+        </div>
+      </div>
+      <div class="listFacility">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <p>secure payment</p>
+      </div>
+    </section>
+
     <!-- ===========================JS Section=================================== -->
 
     <script
@@ -756,6 +804,18 @@
           },
         },
       });
+
+      //for TimeText:-
+      const timeT = document.getElementById("timedText");
+
+      function blink() {
+        if (timeT.style.visibility === "hidden") {
+          timeT.style.visibility = "visible";
+        } else {
+          timeT.style.visibility = "hidden";
+        }
+      }
+      setInterval(blink, 400);
     </script>
   </body>
 </html>
