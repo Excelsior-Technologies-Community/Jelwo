@@ -230,7 +230,8 @@ body::-webkit-scrollbar {
   transition: 0.3s ease;
 }
 
-.hero-btn:hover {
+.hero-btn:hover,
+.view_coll:hover {
   background: black;
   color: white;
 }
@@ -526,4 +527,213 @@ body::-webkit-scrollbar {
     font-size: small;
     gap: 20px;
   }
+}
+
+/* =====================Jewellary collection =================================== */
+.coll_jwel_section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.coll_jwel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 300px;
+  margin-top: 50px;
+  background-color: #55555515;
+  position: relative;
+}
+
+figure.snip1205 {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+}
+figure.snip1205 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.snip1205 img {
+  max-width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+figure.snip1205 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  border-radius: 50%;
+  font-size: 34px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+figure.snip1205 a {
+  inset: 0;
+  z-index: 1;
+  position: absolute;
+}
+figure.snip1205.green {
+  background-color: #a77f66;
+}
+figure.snip1205.green .fa-heart,
+figure.snip1205.green .fa-eye {
+  color: #a77f66;
+}
+
+figure.snip1205:hover img,
+figure.snip1205.hover img {
+  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+figure.snip1205:hover i,
+figure.snip1205.hover i {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.countdown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f5f5f5;
+  display: flex;
+  padding: 15px 30px;
+  transition: opacity 0.3s ease;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.countdown div {
+  padding: 0 20px;
+}
+
+.countdown div:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.countdown h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.countdown span {
+  font-size: 11px;
+  color: gray;
+}
+/* Hide countdown and info on hover */
+.coll_jwel:hover .countdown,
+.coll_jwel:hover .info {
+  visibility: hidden;
+  opacity: 0;
+}
+/* Show cart options on hover */
+.coll_jwel:hover .cart_opt_pro {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info_pro {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.info,
+.cart_opt_pro {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.3s ease;
+}
+
+.info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart_opt_pro {
+  opacity: 0;
+  visibility: hidden;
+}
+.filt {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.filt select {
+  height: 30px;
+  width: 70px;
+}
+
+.quantity {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  background: #f3f3f3;
+}
+
+.quantity button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.quantity input {
+  width: 50px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.add_crt {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  text-decoration: underline;
+  color: #a77f66;
+  font-size: larger;
+}
+
+.view_coll {
+  width: 180px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: #a77f66;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-left: 700px;
 }
