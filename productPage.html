@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jelwo Home</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/product.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- TOGGLER -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- OFFCANVAS -->
+        <div
+          class="offcanvas offcanvas-start d-lg-none"
+          tabindex="-1"
+          id="offcanvasExample"
+        >
+          <div class="offcanvas-header bg-light">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!-- HOME -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                  >
+                    Home
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>06 Classic Jwellary</p>
+                    <p>05 Unique Jwellary</p>
+                    <p>04 Morden Jwellary</p>
+                    <p>03 Traditional Jwellary</p>
+                    <p>02 Luxury Jwellary</p>
+                    <p>01 Elegant Jwellary</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SHOP -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                  >
+                    Shop
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>Earrings</p>
+                    <p>Necklace</p>
+                    <p>Rings</p>
+                    <p>Bracelets</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PRODUCTS -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                  >
+                    Products
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>Earrings</p>
+                    <p>Necklace</p>
+                    <p>Rings</p>
+                    <p>Bracelets</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PAGES (FIXED UNIQUE ID) -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                  >
+                    Pages
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>About</p>
+                    <p>Contact</p>
+                    <p>Privacy & Policies</p>
+                    <p>Terms & Conditions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="d-flex align-items-center justify-content-between w-150">
+            <!-- LEFT -->
+            <div class="d-flex align-items-center">
+              <a class="navbar-brand mb-0 ms-3" href="#">
+                <img
+                  src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=352"
+                />
+              </a>
+
+              <p class="navbar-text mb-0 ms-3 d-none d-md-block">
+                | Free UK standard delivery on all orders.
+              </p>
+            </div>
+
+            <!-- CENTER SEARCH (Desktop) -->
+            <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+              <form class="search-form w-50">
+                <input type="text" placeholder="Search here..." />
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="d-flex align-items-center">
+              <!-- Mobile Search Icon -->
+              <div class="d-lg-none me-4 d-none d-sm-inline">
+                <i class="fa fa-search fs-5"></i>
+              </div>
+
+              <div class="icons_nav d-flex align-items-center">
+                <!--  (hide - 576px) -->
+                <i class="fa-solid fa-user-plus me-4 d-none d-sm-inline"></i>
+
+                <!--(hide - 576px) -->
+                <i class="fa-regular fa-heart me-4 d-none d-sm-inline">(0)</i>
+
+                <!-- Cart (always visible) -->
+                <i class="fa-solid fa-cart-plus me-4">(0)</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Second Navbar (Menu Section) -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-xl">
+        <div class="left">
+          <i class="fa-solid fa-phone"></i>(220) 123 456 7890
+        </div>
+        <div
+          class="collapse navbar-collapse d-none d-lg-flex justify-content-center"
+        >
+          <ul class="navbar-nav">
+            <!-- HOME sub Menu -->
+            <li class="nav-item dropdown mega-dropdown">
+              <a class="nav-link dropdown-toggle" href="#">HOME</a>
+
+              <div class="dropdown-menu mega-menu p-4">
+                <div class="row">
+                  <div class="col-lg-2 col-md-4 text-center">
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/home6.jpg?v=1750230396&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">06 Classic jewelry</p>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 text-center">
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/demo-menu-banner-1.jpg?v=1746178520&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">01 Unique jewelry</p>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 text-center">
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/demo-menu-banner-2.jpg?v=1746178520&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">02 Modern jewelry</p>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 text-center">
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/demo-menu-banner-3.jpg?v=1746178520&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">03 Traditional jewelry</p>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 text-center">
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/demo-menu-banner-4.jpg?v=1746178520&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">04 Luxury jewelry</p>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 text-center">
+                    <img
+                      src="https://jelwo.myshopify.com/cdn/shop/files/demo-menu-banner-5.jpg?v=1746178520&width=352"
+                      class="img-fluid"
+                    />
+                    <p class="mt-2">05 Elegant jewelry</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- SHOP sub Menu -->
+            <li class="nav-item dropdown mega-dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#">SHOP</a>
+
+              <div class="dropdown-menu mega-menu p-5">
+                <div class="container">
+                  <div class="row align-items-start">
+                    <div class="col-lg-2 border-end">
+                      <h6 class="fw-bold mb-3">Earrings</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Blue heavy t-shirt</a></li>
+                        <li><a href="#">Brown sunglasses</a></li>
+                        <li><a href="#">Bucket shoes</a></li>
+                        <li><a href="#">Diamond rashmi ring</a></li>
+                        <li><a href="#">Floral gold bangle</a></li>
+                        <li><a href="#">Glitter diamond ring</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-2 border-end">
+                      <h6 class="fw-bold mb-3">Necklace</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Rose gold rings</a></li>
+                        <li><a href="#">Brown sunglasses</a></li>
+                        <li><a href="#">Bucket shoes</a></li>
+                        <li><a href="#">Color print sandal</a></li>
+                        <li><a href="#">Floral gold bangle</a></li>
+                        <li><a href="#">Simple Pearl earrings</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-2 border-end">
+                      <h6 class="fw-bold mb-3">Rings</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Blue heavy t-shirt</a></li>
+                        <li><a href="#">Brown sunglasses</a></li>
+                        <li><a href="#">Dark sunglasses</a></li>
+                        <li><a href="#">Half sleeve tshirt</a></li>
+                        <li><a href="#">Formal shirt</a></li>
+                        <li><a href="#">Gold nose pin</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="col-lg-2">
+                      <h6 class="fw-bold mb-3">Bracelets</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Blue heavy t-shirt</a></li>
+                        <li><a href="#">Brown sunglasses</a></li>
+                        <li><a href="#">Formal shoes</a></li>
+                        <li><a href="#">Formal shirt</a></li>
+                        <li><a href="#">Blue heavy t-shirt</a></li>
+                        <li><a href="#">Brown sunglasses</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- Promo Image -->
+                    <div class="col-lg-4 text-end">
+                      <img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-menu-banner.jpg?v=1742635152&width=352"
+                        class="img-fluid"
+                        alt="Promo"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- PRODUCTS sub Menu -->
+            <li class="nav-item dropdown mega-dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#">PRODUCTS</a>
+
+              <div class="dropdown-menu mega-menu p-5">
+                <div class="container">
+                  <div class="row">
+                    <!-- LEFT SIDE CATEGORIES -->
+                    <div class="col-lg-8">
+                      <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-lg-3 border-end">
+                          <h6 class="fw-bold mb-3">Earrings</h6>
+                          <ul class="list-unstyled">
+                            <li><a href="#">Blue heavy t-shirt</a></li>
+                            <li><a href="#">Brown sunglasses</a></li>
+                            <li><a href="#">Bucket shoes</a></li>
+                            <li><a href="#">Diamond rashmi ring</a></li>
+                            <li><a href="#">Floral gold bangle</a></li>
+                            <li><a href="#">Glitter diamond ring</a></li>
+                          </ul>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-lg-3 border-end">
+                          <h6 class="fw-bold mb-3">Bracelets</h6>
+                          <ul class="list-unstyled">
+                            <li><a href="#">Blue heavy t-shirt</a></li>
+                            <li><a href="#">Brown sunglasses</a></li>
+                            <li><a href="#">Formal shoes</a></li>
+                            <li><a href="#">Formal shirt</a></li>
+                            <li><a href="#">Blue heavy t-shirt</a></li>
+                            <li><a href="#">Brown sunglasses</a></li>
+                          </ul>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-lg-3 border-end">
+                          <h6 class="fw-bold mb-3">Necklace</h6>
+                          <ul class="list-unstyled">
+                            <li><a href="#">Rose gold rings</a></li>
+                            <li><a href="#">Brown sunglasses</a></li>
+                            <li><a href="#">Bucket shoes</a></li>
+                            <li><a href="#">Color print sandal</a></li>
+                            <li><a href="#">Floral gold bangle</a></li>
+                            <li><a href="#">Simple Pearl earrings</a></li>
+                          </ul>
+                        </div>
+
+                        <!-- Column 4 -->
+                        <div class="col-lg-3">
+                          <h6 class="fw-bold mb-3">Rings</h6>
+                          <ul class="list-unstyled">
+                            <li><a href="#">Blue heavy t-shirt</a></li>
+                            <li><a href="#">Brown sunglasses</a></li>
+                            <li><a href="#">Dark sunglasses</a></li>
+                            <li><a href="#">Half sleeve tshirt</a></li>
+                            <li><a href="#">Formal shirt</a></li>
+                            <li><a href="#">Gold nose pin</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- RIGHT SIDE POPULAR COLLECTION -->
+                    <div class="col-lg-4">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <h5 class="fw-bold mb-0">Popular Collection</h5>
+                      </div>
+
+                      <div class="swiper productSwiper">
+                        <div class="swiper-wrapper">
+                          <!-- Slide 1 -->
+                          <div class="swiper-slide">
+                            <div class="product-card text-center">
+                              <img
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-36.jpg?v=1741666478&width=300"
+                                class="img-fluid mb-3"
+                              />
+                              <p class="fw-semibold">From Rs.22</p>
+                            </div>
+                          </div>
+
+                          <!-- Slide 2 -->
+                          <div class="swiper-slide">
+                            <div class="product-card text-center">
+                              <img
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-21.jpg?v=1741607520&width=300"
+                                class="img-fluid mb-3"
+                              />
+                              <p class="fw-semibold">Rs.15 <s>Rs. 30</s></p>
+                            </div>
+                          </div>
+
+                          <!-- Slide 3 -->
+                          <div class="swiper-slide">
+                            <div class="product-card text-center">
+                              <img
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-56.jpg?v=1741670785&width=300"
+                                class="img-fluid mb-3"
+                              />
+                              <p class="fw-semibold">Rs. 00</p>
+                            </div>
+                          </div>
+
+                          <!-- Slide 4 -->
+                          <div class="swiper-slide">
+                            <div class="product-card text-center">
+                              <img
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-11.jpg?v=1741605562&width=300"
+                                class="img-fluid mb-3"
+                              />
+                              <p class="fw-semibold">Rs. 00</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- BLOG -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+
+            <!-- PAGES Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">PAGES</a>
+
+              <ul class="dropdown-menu pages-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item d-flex justify-content-between align-items-center"
+                    href="#"
+                  >
+                    About us
+                    <span>›</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item d-flex justify-content-between align-items-center"
+                    href="#"
+                  >
+                    Contact
+                    <span>›</span>
+                  </a>
+                </li>
+
+                <li><a class="dropdown-item" href="#">Faq's</a></li>
+                <li><a class="dropdown-item" href="#">Privacy policy</a></li>
+                <li><a class="dropdown-item" href="#">Refund policy</a></li>
+                <li><a class="dropdown-item" href="#">Store location</a></li>
+                <li><a class="dropdown-item" href="#">Shipping & return</a></li>
+                <li><a class="dropdown-item" href="#">Terms & condition</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <i class="fa-solid fa-house-circle-check"></i>Free try at home
+        </div>
+      </div>
+    </nav>
+
+    <!-- -----hero Img ------- -->
+    <section class="hero_section">
+      <div class="hero_img">
+        <img
+          src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-3-breadcrumb.jpg?v=1742473987&width=1920"
+          class="h_img"
+        />
+        <p>Home- Platinum ring</p>
+        <h1>Platinum ring</h1>
+      </div>
+    </section>
+
+    <!-- -------product section ----------->
+    <section class="product_collection_section">
+      <div class="container py-5">
+        <div class="row g-4">
+          <aside class="col-12 col-lg-3">
+            <div class="filter_sidebar">
+              <h3 class="filter_title">Filter</h3>
+
+              <div class="filter_group">
+                <h5>Category</h5>
+                <label
+                  ><input type="checkbox" value="rings" class="cat" />
+                  Rings</label
+                >
+                <label
+                  ><input type="checkbox" value="earrings" class="cat" />
+                  Earrings</label
+                >
+                <label
+                  ><input type="checkbox" value="necklace" class="cat" />
+                  Necklaces</label
+                >
+              </div>
+
+              <div class="filter_group">
+                <h5>Price Range</h5>
+                <input
+                  type="range"
+                  min="50"
+                  max="500"
+                  value="500"
+                  id="priceRange"
+                />
+                <p class="range_text">$0 - $<span id="priceValue">500</span></p>
+              </div>
+
+              <!-- <div class="filter_group">
+                <h5>Availability</h5>
+                <label><input type="checkbox" /> In Stock</label>
+                <label><input type="checkbox" /> Out of Stock</label>
+              </div> -->
+
+              <div class="filter_group">
+                <h5>Color</h5>
+
+                <label class="color_label">
+                  <input type="checkbox" value="gold" class="color" />
+                  <span class="circle gold"></span>
+                  <span class="color_name">Gold</span>
+                </label>
+
+                <label class="color_label">
+                  <input type="checkbox" value="rose-gold" class="color" />
+                  <span class="circle rose-gold"></span>
+                  <span class="color_name">Rose Gold</span>
+                </label>
+
+                <label class="color_label">
+                  <input type="checkbox" value="silver" class="color" />
+                  <span class="circle silver"></span>
+                  <span class="color_name">Silver</span>
+                </label>
+              </div>
+            </div>
+            <img
+              src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-collection-side-banner.jpg?v=1742637512&width=352"
+              class="left_img"
+            />
+          </aside>
+
+          <div class="col-12 col-lg-9">
+            <img
+              src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-collection-banner.jpg?v=1742641202&width=1920"
+              class="img_pro_side"
+            />
+            <div class="product_list_header">
+              <h4>Product List</h4>
+              <p>Sort By</p>
+              <select id="sortBy">
+                <option value="" selected>Sort By</option>
+                <option value="newest">Newest</option>
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+              </select>
+            </div>
+
+            <div class="row g-4" id="productGrid">
+              <!-- ===1==== -->
+              <div
+                class="coll_jwel product"
+                data-cat="rings"
+                data-price="150"
+                data-color="silver"
+              >
+                <!-- Image Section -->
+                <figure class="snip1205 green">
+                  <img
+                    src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-1.jpg?v=1741601512&width=300"
+                    alt="Ring Product"
+                  />
+
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <a href="#"></a>
+
+                  <!-- Countdown -->
+                  <div class="countdown">
+                    <div>
+                      <h3 class="day"></h3>
+                      <span>DAY</span>
+                    </div>
+                    <div>
+                      <h3 class="hours"></h3>
+                      <span>HRS</span>
+                    </div>
+                    <div>
+                      <h3 class="minutes"></h3>
+                      <span>MIN</span>
+                    </div>
+                    <div>
+                      <h3 class="seconds"></h3>
+                      <span>SEC</span>
+                    </div>
+                  </div>
+                </figure>
+
+                <!-- Product Info -->
+                <div class="info_pro">
+                  <div class="info">
+                    <p>Jewelry</p>
+                    <h5>Silver Ring</h5>
+                    <h6 style="color: #a77f66">Rs. 15.00</h6>
+                    <s>Rs. 20.00</s>
+                  </div>
+
+                  <div class="cart_opt_pro">
+                    <div class="cart_option">
+                      <select>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                      </select>
+
+                      <div class="quantity">
+                        <button type="button" class="min">−</button>
+                        <input type="text" value="1" class="count" readonly />
+                        <button type="button" class="max">+</button>
+                      </div>
+                    </div>
+
+                    <button type="button" class="add_crt">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- ===2==== -->
+              <div
+                class="coll_jwel product"
+                data-cat="rings"
+                data-price="129"
+                data-color="rose-gold"
+              >
+                <!-- Image Section -->
+                <figure class="snip1205 green">
+                  <img
+                    src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=720"
+                    alt="Ring Product"
+                  />
+
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <a href="#"></a>
+
+                  <!-- Countdown -->
+                  <div class="countdown">
+                    <div>
+                      <h3 class="day"></h3>
+                      <span>DAY</span>
+                    </div>
+                    <div>
+                      <h3 class="hours"></h3>
+                      <span>HRS</span>
+                    </div>
+                    <div>
+                      <h3 class="minutes"></h3>
+                      <span>MIN</span>
+                    </div>
+                    <div>
+                      <h3 class="seconds"></h3>
+                      <span>SEC</span>
+                    </div>
+                  </div>
+                </figure>
+
+                <!-- Product Info -->
+                <div class="info_pro">
+                  <div class="info">
+                    <p>Jewelry</p>
+                    <h5>Rose Gold Ring</h5>
+                    <h6 style="color: #a77f66">Rs. 15.00</h6>
+                    <s>Rs. 20.00</s>
+                  </div>
+
+                  <div class="cart_opt_pro">
+                    <div class="cart_option">
+                      <select>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                      </select>
+
+                      <div class="quantity">
+                        <button type="button" class="min">−</button>
+                        <input type="text" value="1" class="count" readonly />
+                        <button type="button" class="max">+</button>
+                      </div>
+                    </div>
+
+                    <button type="button" class="add_crt">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- ===3==== -->
+              <div
+                class="coll_jwel product"
+                data-cat="rings"
+                data-price="100"
+                data-color="gold"
+              >
+                <!-- Image Section -->
+                <figure class="snip1205 green">
+                  <img
+                    src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-21.jpg?v=1741607520&width=300"
+                    alt="Ring Product"
+                  />
+
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <a href="#"></a>
+
+                  <!-- Countdown -->
+                  <div class="countdown">
+                    <div>
+                      <h3 class="day"></h3>
+                      <span>DAY</span>
+                    </div>
+                    <div>
+                      <h3 class="hours"></h3>
+                      <span>HRS</span>
+                    </div>
+                    <div>
+                      <h3 class="minutes"></h3>
+                      <span>MIN</span>
+                    </div>
+                    <div>
+                      <h3 class="seconds"></h3>
+                      <span>SEC</span>
+                    </div>
+                  </div>
+                </figure>
+
+                <!-- Product Info -->
+                <div class="info_pro">
+                  <div class="info">
+                    <p>Jewelry</p>
+                    <h5>Gold Ring</h5>
+                    <h6 style="color: #a77f66">Rs. 15.00</h6>
+                    <s>Rs. 20.00</s>
+                  </div>
+
+                  <div class="cart_opt_pro">
+                    <div class="cart_option">
+                      <select>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                      </select>
+
+                      <div class="quantity">
+                        <button type="button" class="min">−</button>
+                        <input type="text" value="1" class="count" readonly />
+                        <button type="button" class="max">+</button>
+                      </div>
+                    </div>
+
+                    <button type="button" class="add_crt">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------Footer------------------------- -->
+    <section class="footer">
+      <div class="footer_container">
+        <div class="footer_opt row">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <img
+              src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=352"
+            />
+            <h5 style="margin-top: 30px">
+              <i class="fa-solid fa-location-dot"></i>
+              55 East 10th street, new york, ny 10003, united states
+            </h5>
+            <h5><i class="fa-solid fa-phone"></i>+ (220) 123 456 7890</h5>
+            <h5><i class="fa-solid fa-envelope"></i>demo123546@gmail.com</h5>
+          </div>
+          <div class="col-6 col-sm-6 col-lg-2">
+            <h4>Information</h4>
+            <h6>About us</h6>
+            <h6>Contact us</h6>
+            <h6>Faq's</h6>
+            <h6>News</h6>
+          </div>
+          <div class="col-6 col-sm-6 col-lg-2">
+            <h4>Privacy & terms</h4>
+            <h6>Privacy policy</h6>
+            <h6>Refund policy</h6>
+            <h6>Shipping & return</h6>
+            <h6>Terms & condition</h6>
+          </div>
+          <div class="col-6 col-sm-6 col-lg-2">
+            <h4>Category</h4>
+            <h6>Rings</h6>
+            <h6>Earring</h6>
+            <h6>Pendant</h6>
+            <h6>Necklaces</h6>
+            <h6>Bracelets</h6>
+          </div>
+          <div class="col-6 col-sm-6 col-lg-2">
+            <h4>Visit store</h4>
+            <h6>Mon - sat : 10am - 11pm</h6>
+
+            <h6>Sun : 10am - 4pm</h6>
+
+            <h6>7 Days a week</h6>
+          </div>
+        </div>
+        <div class="footer_subscribe row">
+          <div class="col-12 col-md-4 text-center text-md-start">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div
+            class="col-12 col-md-8 d-flex flex-column flex-md-row gap-3 align-items-center"
+          >
+            <h5>Subscribe and get 15% discount.</h5>
+            <input type="email" placeholder="Enter your email.." />
+            <button class="subscribe">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================JS Section=================================== -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      //for product swiper menu
+      const productSwiper = new Swiper(".productSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // ===== CLOCK FOR ALL CARDS =====
+        function updateClock() {
+          const now = new Date();
+
+          document.querySelectorAll(".coll_jwel").forEach((card) => {
+            card.querySelector(".day").textContent = now.getDate();
+            card.querySelector(".hours").textContent = now.getHours();
+            card.querySelector(".minutes").textContent = now.getMinutes();
+            card.querySelector(".seconds").textContent = now.getSeconds();
+          });
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+
+        // ===== QUANTITY FOR ALL CARDS =====
+        document.querySelectorAll(".quantity").forEach((box) => {
+          const minBtn = box.querySelector(".min");
+          const maxBtn = box.querySelector(".max");
+          const input = box.querySelector(".count");
+
+          minBtn.addEventListener("click", () => {
+            let value = parseInt(input.value);
+            if (value > 1) input.value = value - 1;
+          });
+
+          maxBtn.addEventListener("click", () => {
+            input.value = parseInt(input.value) + 1;
+          });
+        });
+      });
+
+      //for filters:----
+      const checkboxes = document.querySelectorAll(".cat");
+      const colors = document.querySelectorAll(".color");
+      const range = document.getElementById("priceRange");
+      const priceValue = document.getElementById("priceValue");
+      const products = Array.from(document.querySelectorAll(".product"));
+      const sortBy = document.getElementById("sortBy");
+      const productGrid = document.getElementById("productGrid");
+
+      products.forEach((product, index) => {
+        product.dataset.index = index;
+      });
+
+      const getProductName = (product) => {
+        const name = product.querySelector(".info h5");
+        return name ? name.textContent.trim().toLowerCase() : "";
+      };
+
+      const sortProducts = () => {
+        if (!sortBy || !productGrid) return;
+
+        const sortType = sortBy.value || "newest";
+        const sorted = [...products].sort((a, b) => {
+          if (sortType === "A-Z") {
+            return getProductName(a).localeCompare(getProductName(b));
+          }
+          if (sortType === "Z-A") {
+            return getProductName(b).localeCompare(getProductName(a));
+          }
+          return Number(a.dataset.index) - Number(b.dataset.index);
+        });
+
+        sorted.forEach((product) => productGrid.appendChild(product));
+      };
+
+      const filterProducts = () => {
+        const selectedCats = Array.from(checkboxes)
+          .filter((cb) => cb.checked)
+          .map((cb) => cb.value);
+
+        const selectedColors = Array.from(colors)
+          .filter((cb) => cb.checked)
+          .map((cb) => cb.value);
+
+        const maxPrice = +range.value;
+        priceValue.textContent = maxPrice;
+
+        products.forEach((product) => {
+          const category = product.dataset.cat;
+          const color = product.dataset.color;
+          const price = +product.dataset.price;
+
+          const categoryMatch =
+            selectedCats.length === 0 || selectedCats.includes(category);
+
+          const colorMatch =
+            selectedColors.length === 0 || selectedColors.includes(color);
+
+          const priceMatch = price <= maxPrice;
+
+          product.style.display =
+            categoryMatch && colorMatch && priceMatch ? "" : "none";
+        });
+
+        sortProducts();
+      };
+
+      checkboxes.forEach((cb) => cb.addEventListener("change", filterProducts));
+
+      colors.forEach((cb) => cb.addEventListener("change", filterProducts));
+
+      range.addEventListener("input", filterProducts);
+
+      if (sortBy) {
+        sortBy.addEventListener("change", sortProducts);
+      }
+    </script>
+  </body>
+</html>
