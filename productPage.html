@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jelwo Home</title>
+    <title>Product Page</title>
+    <script src="./Data.js"></script>
+    <script src="./main.js"></script>
     <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
@@ -558,30 +560,26 @@
               <div class="filter_group">
                 <h5>Category</h5>
                 <label
-                  ><input type="checkbox" value="rings" class="cat" />
-                  Rings</label
-                >
-                <label
                   ><input type="checkbox" value="earrings" class="cat" />
-                  Earrings</label
-                >
-                <label
-                  ><input type="checkbox" value="necklace" class="cat" />
-                  Necklaces</label
-                >
+                  Earrings <br />
+
+                  <input type="checkbox" value="rings" class="cat" /> Rings
+                  <br />
+                  <input type="checkbox" value="jhumkas" class="cat" /> Jhumkas
+                </label>
               </div>
 
               <div class="filter_group">
                 <h5>Price Range</h5>
                 <input
                   type="range"
-                  min="50"
-                  max="500"
-                  value="500"
+                  min="0"
+                  max="3000"
+                  value="3000"
                   class="priceRange"
                 />
                 <p class="range_text">
-                  $0 - $ <span class="priceValue">500</span>
+                  Rs 0- Rs. <span class="priceValue">3000</span>
                 </p>
               </div>
 
@@ -615,6 +613,7 @@
           </aside>
 
           <!-- ===== Product Section ===== -->
+
           <div class="col-12 col-lg-9">
             <img
               src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-collection-banner.jpg?v=1742641202&width=1920"
@@ -660,194 +659,7 @@
             </div>
 
             <div class="row g-4 mt-2" id="productGrid">
-              <!-- PRODUCT 1 -->
-              <div
-                class="col-md-4 product"
-                data-cat="rings"
-                data-price="150"
-                data-color="silver"
-              >
-                <div class="coll_jwel">
-                  <figure class="snip1205 green">
-                    <img
-                      src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-1.jpg?v=1741601512&width=300"
-                      alt="Silver Ring"
-                      class="img-fluid"
-                    />
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-eye"></i>
-                    <a href="#"></a>
-                    <div class="countdown">
-                      <div>
-                        <h3 class="day"></h3>
-                        <span>DAY</span>
-                      </div>
-                      <div>
-                        <h3 class="hours"></h3>
-                        <span>HRS</span>
-                      </div>
-                      <div>
-                        <h3 class="minutes"></h3>
-                        <span>MIN</span>
-                      </div>
-                      <div>
-                        <h3 class="seconds"></h3>
-                        <span>SEC</span>
-                      </div>
-                    </div>
-                  </figure>
-
-                  <div class="info_pro">
-                    <div class="info">
-                      <p>Jewelry</p>
-                      <h5>Silver Ring</h5>
-                      <h6 style="color: #a77f66">Rs. 15.00</h6>
-                      <s>Rs. 20.00</s>
-                    </div>
-                    <div class="cart_opt_pro">
-                      <div class="cart_option">
-                        <select>
-                          <option value="28">28</option>
-                          <option value="29">29</option>
-                          <option value="30">30</option>
-                        </select>
-                        <div class="quantity">
-                          <button type="button" class="min">-</button>
-                          <input type="text" value="1" class="count" readonly />
-                          <button type="button" class="max">+</button>
-                        </div>
-                      </div>
-                      <button type="button" class="add_crt">Add to Cart</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- PRODUCT 2 -->
-              <div
-                class="col-md-4 product"
-                data-cat="rings"
-                data-price="129"
-                data-color="rose-gold"
-              >
-                <div class="coll_jwel">
-                  <figure class="snip1205 green">
-                    <img
-                      src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=720"
-                      alt="Rose Gold Ring"
-                      class="img-fluid"
-                    />
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-eye"></i>
-                    <a href="#"></a>
-                    <div class="countdown">
-                      <div>
-                        <h3 class="day"></h3>
-                        <span>DAY</span>
-                      </div>
-                      <div>
-                        <h3 class="hours"></h3>
-                        <span>HRS</span>
-                      </div>
-                      <div>
-                        <h3 class="minutes"></h3>
-                        <span>MIN</span>
-                      </div>
-                      <div>
-                        <h3 class="seconds"></h3>
-                        <span>SEC</span>
-                      </div>
-                    </div>
-                  </figure>
-
-                  <div class="info_pro">
-                    <div class="info">
-                      <p>Jewelry</p>
-                      <h5>Rose Gold Ring</h5>
-                      <h6 style="color: #a77f66">Rs. 15.00</h6>
-                      <s>Rs. 20.00</s>
-                    </div>
-                    <div class="cart_opt_pro">
-                      <div class="cart_option">
-                        <select>
-                          <option value="28">28</option>
-                          <option value="29">29</option>
-                          <option value="30">30</option>
-                        </select>
-                        <div class="quantity">
-                          <button type="button" class="min">-</button>
-                          <input type="text" value="1" class="count" readonly />
-                          <button type="button" class="max">+</button>
-                        </div>
-                      </div>
-                      <button type="button" class="add_crt">Add to Cart</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- PRODUCT 3 -->
-              <div
-                class="col-md-4 product"
-                data-cat="rings"
-                data-price="100"
-                data-color="gold"
-              >
-                <div class="coll_jwel">
-                  <figure class="snip1205 green">
-                    <img
-                      src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-21.jpg?v=1741607520&width=300"
-                      alt="Gold Ring"
-                      class="img-fluid"
-                    />
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-eye"></i>
-                    <a href="#"></a>
-                    <div class="countdown">
-                      <div>
-                        <h3 class="day"></h3>
-                        <span>DAY</span>
-                      </div>
-                      <div>
-                        <h3 class="hours"></h3>
-                        <span>HRS</span>
-                      </div>
-                      <div>
-                        <h3 class="minutes"></h3>
-                        <span>MIN</span>
-                      </div>
-                      <div>
-                        <h3 class="seconds"></h3>
-                        <span>SEC</span>
-                      </div>
-                    </div>
-                  </figure>
-
-                  <div class="info_pro">
-                    <div class="info">
-                      <p>Jewelry</p>
-                      <h5>Gold Ring</h5>
-                      <h6 style="color: #a77f66">Rs. 15.00</h6>
-                      <s>Rs. 20.00</s>
-                    </div>
-                    <div class="cart_opt_pro">
-                      <div class="cart_option">
-                        <select>
-                          <option value="28">28</option>
-                          <option value="29">29</option>
-                          <option value="30">30</option>
-                        </select>
-                        <div class="quantity">
-                          <button type="button" class="min">-</button>
-                          <input type="text" value="1" class="count" readonly />
-                          <button type="button" class="max">+</button>
-                        </div>
-                      </div>
-                      <button type="button" class="add_crt">Add to Cart</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="collectionSection"></div>
             </div>
           </div>
         </div>
@@ -866,9 +678,10 @@
       <div class="offcanvas-body">
         <div class="filter_sidebar">
           <h6>Category</h6>
-          <input type="checkbox" value="rings" class="cat" /> Rings <br />
           <input type="checkbox" value="earrings" class="cat" /> Earrings <br />
-          <input type="checkbox" value="necklace" class="cat" /> Necklace
+
+          <input type="checkbox" value="rings" class="cat" /> Rings <br />
+          <input type="checkbox" value="jhumkas" class="cat" /> Jhumkas
 
           <hr />
 
@@ -883,12 +696,12 @@
           <h6>Price</h6>
           <input
             type="range"
-            min="50"
-            max="500"
-            value="500"
+            min="0"
+            max="3000"
+            value="3000"
             class="priceRange"
           />
-          <p>$0 - $<span class="priceValue">500</span></p>
+          <p>Rs.0 - Rs.<span class="priceValue">3000</span></p>
         </div>
       </div>
     </div>
@@ -972,186 +785,6 @@
         slidesPerView: 2,
         spaceBetween: 20,
         loop: true,
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        // ===== CLOCK FOR ALL CARDS =====
-        function updateClock() {
-          const now = new Date();
-
-          document.querySelectorAll(".coll_jwel").forEach((card) => {
-            card.querySelector(".day").textContent = now.getDate();
-            card.querySelector(".hours").textContent = now.getHours();
-            card.querySelector(".minutes").textContent = now.getMinutes();
-            card.querySelector(".seconds").textContent = now.getSeconds();
-          });
-        }
-
-        updateClock();
-        setInterval(updateClock, 1000);
-
-        // ===== QUANTITY FOR ALL CARDS =====
-        document.querySelectorAll(".quantity").forEach((box) => {
-          const minBtn = box.querySelector(".min");
-          const maxBtn = box.querySelector(".max");
-          const input = box.querySelector(".count");
-
-          minBtn.addEventListener("click", () => {
-            let value = parseInt(input.value);
-            if (value > 1) input.value = value - 1;
-          });
-
-          maxBtn.addEventListener("click", () => {
-            input.value = parseInt(input.value) + 1;
-          });
-        });
-      });
-
-      //for filters
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const products = [...document.querySelectorAll(".product")];
-        const sortBy = document.getElementById("sortBy");
-        const productGrid = document.getElementById("productGrid");
-        const rangeInputs = [...document.querySelectorAll(".priceRange")];
-        const catInputs = [...document.querySelectorAll(".cat")];
-        const colorInputs = [...document.querySelectorAll(".color")];
-        const appliedDesktop = document.getElementById("appliedFiltersDesktop");
-        const appliedMobile = document.getElementById("appliedFiltersMobile");
-        const clearDesktopBtn = document.getElementById("clearFiltersDesktop");
-        const clearMobileBtn = document.getElementById("clearFiltersMobile");
-        const maxPrice = Number(rangeInputs[0]?.max) || 0;
-        const labelMap = {
-          rings: "Rings",
-          earrings: "Earrings",
-          necklace: "Necklaces",
-          gold: "Gold",
-          "rose-gold": "Rose Gold",
-          silver: "Silver",
-        };
-
-        products.forEach((p, i) => (p.dataset.index = i));
-
-        const getName = (p) =>
-          p.querySelector(".info_pro h5")?.textContent.toLowerCase() || "";
-
-        function renderAppliedFilters(cats, colors, price) {
-          const chips = [];
-
-          cats.forEach((cat) => {
-            chips.push(`Category: ${labelMap[cat] || cat}`);
-          });
-
-          colors.forEach((color) => {
-            chips.push(`Color: ${labelMap[color] || color}`);
-          });
-
-          if (price < maxPrice) {
-            chips.push(`Price: up to $${price}`);
-          }
-
-          const html = chips.length
-            ? chips
-                .map(
-                  (item) => `<span class="applied_filter_chip">${item}</span>`,
-                )
-                .join("")
-            : '<span class="applied_filter_empty">No filter</span>';
-
-          if (appliedDesktop) appliedDesktop.innerHTML = html;
-          if (appliedMobile) appliedMobile.innerHTML = html;
-        }
-
-        function syncDuplicateCheckboxes(changedInput, allInputs) {
-          allInputs.forEach((input) => {
-            if (
-              input !== changedInput &&
-              input.value === changedInput.value &&
-              input.checked !== changedInput.checked
-            ) {
-              input.checked = changedInput.checked;
-            }
-          });
-        }
-
-        function applyFilter(priceOverride = null) {
-          const cats = [
-            ...new Set(
-              [...document.querySelectorAll(".cat:checked")].map(
-                (c) => c.value,
-              ),
-            ),
-          ];
-          const colors = [
-            ...new Set(
-              [...document.querySelectorAll(".color:checked")].map(
-                (c) => c.value,
-              ),
-            ),
-          ];
-          const price =
-            Number(priceOverride) || Number(rangeInputs[0]?.value) || 0;
-
-          document
-            .querySelectorAll(".priceValue")
-            .forEach((v) => (v.textContent = price));
-          rangeInputs.forEach((r) => {
-            if (Number(r.value) !== price) r.value = price;
-          });
-
-          products.forEach((p) => {
-            const show =
-              (cats.length === 0 || cats.includes(p.dataset.cat)) &&
-              (colors.length === 0 || colors.includes(p.dataset.color)) &&
-              +p.dataset.price <= price;
-
-            p.style.display = show ? "" : "none";
-          });
-
-          renderAppliedFilters(cats, colors, price);
-          sortProducts();
-        }
-
-        function sortProducts() {
-          const type = sortBy?.value;
-
-          products.sort((a, b) => {
-            if (type === "A-Z") return getName(a).localeCompare(getName(b));
-            if (type === "Z-A") return getName(b).localeCompare(getName(a));
-            return a.dataset.index - b.dataset.index;
-          });
-
-          products.forEach((p) => productGrid.appendChild(p));
-        }
-
-        document.addEventListener("change", (e) => {
-          if (e.target.classList.contains("cat")) {
-            syncDuplicateCheckboxes(e.target, catInputs);
-            applyFilter();
-          }
-
-          if (e.target.classList.contains("color")) {
-            syncDuplicateCheckboxes(e.target, colorInputs);
-            applyFilter();
-          }
-        });
-
-        rangeInputs.forEach((r) =>
-          r.addEventListener("input", (e) => applyFilter(e.target.value)),
-        );
-
-        sortBy?.addEventListener("change", sortProducts);
-
-        function clearAllFilters() {
-          catInputs.forEach((input) => (input.checked = false));
-          colorInputs.forEach((input) => (input.checked = false));
-          rangeInputs.forEach((input) => (input.value = maxPrice));
-          applyFilter(maxPrice);
-        }
-
-        clearDesktopBtn?.addEventListener("click", clearAllFilters);
-        clearMobileBtn?.addEventListener("click", clearAllFilters);
-        applyFilter();
       });
     </script>
   </body>

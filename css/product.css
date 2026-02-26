@@ -381,6 +381,10 @@ body::-webkit-scrollbar {
   background-color: #55555515;
   position: relative;
 }
+.collectionSection {
+  display: flex;
+  gap: 30px;
+}
 
 /* Product page right-side cards: */
 .product_collection_section .row.g-4 > .coll_jwel {

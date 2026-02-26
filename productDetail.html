@@ -24,6 +24,59 @@
     />
     <link rel="stylesheet" href="./css/productDetail.css" />
   </head>
+  <script src="data.js"></script>
+  <script src="./main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const params = new URLSearchParams(window.location.search);
+      const productId = parseInt(params.get("id"));
+
+      const product = products.find((p) => p.id === productId);
+      if (!product) return;
+
+      // Image
+      document.querySelector(".pro_img").src = product.image;
+
+      // Title
+      document.querySelector(".product_info h1").textContent = product.name;
+
+      // Price
+      document.querySelector(".pricing h4").textContent =
+        "Rs. " + product.price;
+
+      document.querySelector(".pricing s").textContent =
+        "Rs. " + product.oldPrice;
+
+      const discount = Math.round(
+        ((product.oldPrice - product.price) / product.oldPrice) * 100,
+      );
+      document.querySelector(".pricing h5").textContent =
+        "Sale " + discount + "%";
+
+      // Color (since not in array, using category as example)
+      // document.getElementById("fil_color").textContent = product.category;
+
+      // Quantity counter
+      const minBtn = document.querySelector(".product_info .counter .min");
+      const maxBtn = document.querySelector(".product_info .counter .max");
+      const countInput = document.querySelector(
+        ".product_info .counter .count",
+      );
+
+      if (minBtn && maxBtn && countInput) {
+        minBtn.addEventListener("click", function () {
+          const value = parseInt(countInput.value, 10) || 1;
+          countInput.value = value > 1 ? value - 1 : 1;
+        });
+
+        maxBtn.addEventListener("click", function () {
+          const value = parseInt(countInput.value, 10) || 1;
+          countInput.value = value + 1;
+        });
+      }
+    });
+  </script>
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -516,6 +569,141 @@
       </div>
     </nav>
 
+    <!-- --------------Product Info ----------------------- -->
+
+    <section class="product_info">
+      <div class="row p-5">
+        <!-- Left Image -->
+        <div class="col-lg-6">
+          <img class="pro_img" />
+        </div>
+
+        <!-- Right Info -->
+        <div class="col-lg-6">
+          <!-- add dynamic -->
+          <h1></h1>
+
+          <!-- Static Rating -->
+          <div class="rating">
+            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+            <p>1 review</p>
+          </div>
+
+          <!-- Dynamic Pricing -->
+          <div class="pricing">
+            <h4></h4>
+            <p><s></s></p>
+            <h5></h5>
+          </div>
+
+          <p>Tax included. Shipping calculated at checkout.</p>
+
+          <p>
+            <i
+              class="fa-regular fa-circle-dot"
+              style="color: rgb(37, 242, 120)"
+            ></i>
+            16 In Stock
+          </p>
+
+          <hr />
+
+          <!-- Static Description -->
+          <p>
+            Care for fiber: 30% more recycled polyester. We label garments
+            manufactured using environmentally friendly technologies and raw
+            materials with the Join Life label.
+          </p>
+
+          <!-- Static Timer -->
+          <div class="timing">
+            <p>Hurry up! Sale ends in:</p>
+            <p id="timer"></p>
+          </div>
+
+          <!-- Dynamic Color -->
+          <!-- <div class="filt_color">
+            <h5>Color :</h5>
+            <p id="fil_color"></p>
+          </div> -->
+
+          <!-- Quantity Counter -->
+          <div class="counter">
+            <span>Quantity</span>
+            <div class="quantity_box">
+              <button type="button" class="min">-</button>
+              <input type="text" value="1" class="count" readonly />
+              <button type="button" class="max">+</button>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <button class="add_cart">Add to cart</button>
+          <button class="buy_now">Buy now</button>
+
+          <!-- Static Options -->
+          <div class="opts">
+            <p><i class="fa-regular fa-heart"></i> Wishlist</p>
+            <p><i class="fa-regular fa-share"></i> Share</p>
+            <p><i class="fa-regular fa-ruler-combined"></i> Size Guide</p>
+            <p><i class="fa-regular fa-circle-question"></i> Question</p>
+          </div>
+
+          <hr />
+
+          <!-- Static Delivery -->
+          <p class="delivery_info">
+            <b>Delivery:</b> Estimated delivery time: 5-7 days <br />
+            <b>Return:</b> Within 45 days of purchase <br />
+            <b>Sku:</b> <span>445</span>
+          </p>
+
+          <!-- Static Payment -->
+          <div class="payment_security mt-4 p-4">
+            <h5>Payment & Security</h5>
+
+            <!-- <div class="payment_icons">
+              <img src="visa.png" width="50" />
+              <img src="mastercard.png" width="50" />
+              <img src="amex.png" width="50" />
+              <img src="paypal.png" width="50" />
+              <img src="discover.png" width="50" />
+            </div> -->
+
+            <p class="mt-2">
+              Your payment information is processed securely. We do not store
+              credit card details nor have access to your credit card
+              information.
+            </p>
+          </div>
+
+          <!-- Static Service -->
+          <div
+            class="service_features mt-3 p-3 d-flex justify-content-between text-center"
+          >
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Order tracking</p>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-rotate-left"></i>
+              <p>90 days return</p>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-dollar-sign"></i>
+              <p>Money guarantee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ----------------------Accordition part --------------------------- -->
     <section class="accordion_part">
       <div class="container">
@@ -780,7 +968,7 @@
       </div>
     </section>
 
-    <!-- -------------Recommended product---------------------- -->
+    <!-- -------------Recommended product---------------------- (Static)-->
     <section class="recom_product">
       <p style="text-align: center; color: #a77f66">You might also like</p>
       <h2 style="text-align: center">Recommended product</h2>
